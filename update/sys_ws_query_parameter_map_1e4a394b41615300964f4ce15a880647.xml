@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_query_parameter_map">
+    <sys_ws_query_parameter_map action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_ws_query_parameter_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-23 04:35:18</sys_created_on>
+        <sys_id>1e4a394b41615300964f4ce15a880647</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>8589f14b41615300964f4ce15a88065a</sys_name>
+        <sys_package display_value="Parking Issues" source="x_pir">2bc7b833673212008db1bcb532415a9d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Parking Issues">2bc7b833673212008db1bcb532415a9d</sys_scope>
+        <sys_update_name>sys_ws_query_parameter_map_1e4a394b41615300964f4ce15a880647</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-23 04:35:18</sys_updated_on>
+        <web_service_operation display_value="report_issue">87b9b54b41615300964f4ce15a880614</web_service_operation>
+        <web_service_query_parameter display_value="description">8589f14b41615300964f4ce15a88065a</web_service_query_parameter>
+    </sys_ws_query_parameter_map>
+</record_update>

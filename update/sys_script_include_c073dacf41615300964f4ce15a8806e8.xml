@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_pir.ParkingIssue</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ParkingIssue</name>
+        <script><![CDATA[var ParkingIssue = Class.create();
+ParkingIssue.prototype = {
+    initialize: function() {},
+
+    create: function(car, description) {
+
+        if (description == 'undefined')
+            description = "No description provided";
+
+        var grPI = new GlideRecordSecure('x_pir_parking_issue');
+        grPI.initialize();
+        grPI.setValue('description', description);
+        grPI.setValue('car', car.sys_id);
+        grPI.insert();
+        return grPI;
+    },
+
+    type: 'ParkingIssue'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-23 06:27:09</sys_created_on>
+        <sys_id>c073dacf41615300964f4ce15a8806e8</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>ParkingIssue</sys_name>
+        <sys_package display_value="Parking Issues" source="x_pir">2bc7b833673212008db1bcb532415a9d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Parking Issues">2bc7b833673212008db1bcb532415a9d</sys_scope>
+        <sys_update_name>sys_script_include_c073dacf41615300964f4ce15a8806e8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-29 04:29:23</sys_updated_on>
+    </sys_script_include>
+</record_update>
