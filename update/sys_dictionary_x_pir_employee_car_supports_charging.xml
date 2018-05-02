@@ -53,7 +53,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-23 04:01:44</sys_created_on>
-        <sys_id>42fea00661f11300964f0dcbf0fbedb1</sys_id>
+        <sys_id>bbd2c81a61b51300964f0dcbf0fbed42</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>supports_charging</sys_name>
         <sys_package display_value="Parking Issues - perf" source="x_pir">2bc7b833673212008db1bcb532415a9d</sys_package>
@@ -61,7 +61,7 @@
         <sys_scope display_value="Parking Issues - perf">2bc7b833673212008db1bcb532415a9d</sys_scope>
         <sys_update_name>sys_dictionary_x_pir_employee_car_supports_charging</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-05-02 06:48:01</sys_updated_on>
+        <sys_updated_on>2018-05-02 22:13:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
