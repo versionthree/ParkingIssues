@@ -9,10 +9,10 @@
             <element name="car"/>
         </index>
         <index name="index2">
-            <element name="employee"/>
+            <element name="license_plate_number"/>
         </index>
         <index name="index3">
-            <element name="license_plate_number"/>
+            <element name="employee"/>
         </index>
     </element>
 </database>

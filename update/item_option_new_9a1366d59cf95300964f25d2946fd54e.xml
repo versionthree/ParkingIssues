@@ -61,9 +61,9 @@
         <sys_id>9a1366d59cf95300964f25d2946fd54e</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>Color of the vehicle?</sys_name>
-        <sys_package display_value="Parking Issues" source="x_pir">2bc7b833673212008db1bcb532415a9d</sys_package>
+        <sys_package display_value="Parking Issues - perf" source="x_pir">2bc7b833673212008db1bcb532415a9d</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Parking Issues">2bc7b833673212008db1bcb532415a9d</sys_scope>
+        <sys_scope display_value="Parking Issues - perf">2bc7b833673212008db1bcb532415a9d</sys_scope>
         <sys_update_name>item_option_new_9a1366d59cf95300964f25d2946fd54e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2018-04-30 07:24:45</sys_updated_on>
