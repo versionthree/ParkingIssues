@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_pir.GetManufacturer</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>GetManufacturer</name>
+        <script><![CDATA[var GetManufacturer = Class.create();
+GetManufacturer.prototype = {
+    initialize: function() {
+    },
+	
+	getDetails: function(gr) {
+		
+ try { 
+ var r = new sn_ws.RESTMessageV2('x_pir.Pull manufacturer details', 'nhtsa manufacturer details');
+ r.setStringParameterNoEscape('manufacturer', gr.make);
+
+//override authentication profile 
+//authentication type ='basic'/ 'oauth2'
+//r.setAuthentication(authentication type, profile name);
+
+//set a MID server name if one wants to run the message on MID
+//r.setMIDServer('MY_MID_SERVER');
+
+//if the message is configured to communicate through ECC queue, either
+//by setting a MID server or calling executeAsync, one needs to set skip_sensor
+//to true. Otherwise, one may get an intermittent error that the response body is null
+//r.setEccParameter('skip_sensor', true);
+r.saveResponseBodyAsAttachment(gr.getTableName(), gr.sys_id, gr.make + gr.sys_id + ".xml");
+
+ var response = r.execute();
+	 	 gs.info(response.getErrorMessage());
+ //var responseBody = response.getBody();
+	 
+ var httpStatus = response.getStatusCode();
+}
+catch(ex) {
+ var message = ex.message;
+}
+	},
+
+    type: 'GetManufacturer'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-02 01:21:28</sys_created_on>
+        <sys_id>259267f961711300964f0dcbf0fbed43</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>GetManufacturer</sys_name>
+        <sys_package display_value="Parking Issues" source="x_pir">2bc7b833673212008db1bcb532415a9d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Parking Issues">2bc7b833673212008db1bcb532415a9d</sys_scope>
+        <sys_update_name>sys_script_include_259267f961711300964f0dcbf0fbed43</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-02 01:55:03</sys_updated_on>
+    </sys_script_include>
+</record_update>

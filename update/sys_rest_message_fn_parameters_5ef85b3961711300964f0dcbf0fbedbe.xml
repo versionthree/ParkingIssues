@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
+        <name>manufacturer</name>
+        <rest_message_function display_value="nhtsa manufacturer details">cad6dff561711300964f0dcbf0fbed22</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-02 00:32:12</sys_created_on>
+        <sys_id>5ef85b3961711300964f0dcbf0fbedbe</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>manufacturer</sys_name>
+        <sys_package display_value="Parking Issues" source="x_pir">2bc7b833673212008db1bcb532415a9d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Parking Issues">2bc7b833673212008db1bcb532415a9d</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_5ef85b3961711300964f0dcbf0fbedbe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-02 01:54:01</sys_updated_on>
+        <type>string</type>
+        <value>Ferrari</value>
+    </sys_rest_message_fn_parameters>
+</record_update>
