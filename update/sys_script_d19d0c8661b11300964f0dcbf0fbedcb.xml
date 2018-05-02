@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sys_attachment</collection>
+        <condition>current.table_name  == 'x_pir_car'</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Check car attachment</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    getExistingAttachments();
+
+    function getExistingAttachments() {
+
+        var existingAttach = new GlideRecord('sys_attachment');
+        existingAttach.orderBy('sys_created_on');
+        existingAttach.query();
+        while (existingAttach.next()) {
+
+                var ga = new GlideSysAttachment();
+                var attachmentStream2 = ga.getContentStream(existingAttach.sys_id);
+                var secondHashValue = new GlideDigest().getSHA256HexFromInputStream(attachmentStream2);
+                var currentHash = getCurrentAttachment();
+
+                if (secondHashValue == currentHash) {
+                    gs.addInfoMessage("attachment already exists!");
+                    existingAttach.deleteMultiple();
+                    break;
+                } else
+                    continue;
+
+        }
+    }
+
+    function getCurrentAttachment() {
+
+        var sysAttachment = new GlideSysAttachment();
+        var attachmentGR = sysAttachment.getAttachments('x_pir_car', current.table_sys_id);
+        attachmentGR.next();
+        var attachmentStream1 = sysAttachment.getContentStream(attachmentGR.sys_id);
+        var firstHashValue = new GlideDigest().getSHA256HexFromInputStream(attachmentStream1);
+
+        return firstHashValue;
+
+    }
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-02 04:23:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d19d0c8661b11300964f0dcbf0fbedcb</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>Check car attachment</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Parking Issues" source="x_pir">2bc7b833673212008db1bcb532415a9d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Parking Issues">2bc7b833673212008db1bcb532415a9d</sys_scope>
+        <sys_update_name>sys_script_d19d0c8661b11300964f0dcbf0fbedcb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-02 06:06:22</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=d19d0c8661b11300964f0dcbf0fbedcb"/>
+</record_update>
