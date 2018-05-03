@@ -5,6 +5,7 @@
         <advanced>false</advanced>
         <condition/>
         <description/>
+        <express_security>false</express_security>
         <name>/api/x_pir/parking_issue</name>
         <operation display_value="execute">execute</operation>
         <script/>
