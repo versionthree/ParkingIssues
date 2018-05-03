@@ -1,80 +1,64 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_list parent="" relationship="" sys_domain="global" table="syslog_app_scope" version="2" view="">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>sys_created_on</element>
-            <list_id display_value="syslog_app_scope" element="NULL" name="syslog_app_scope" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">31167233c33221007de15ad8cbba8f0e</list_id>
+            <list_id display_value="syslog" element="NULL" name="syslog" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">aaf499bcc0a8016400ff6313824a3ee9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2014-09-03 22:52:22</sys_created_on>
-            <sys_id>75167233c33221007de15ad8cbba8f0e</sys_id>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-04-25 13:32:39</sys_created_on>
+            <sys_id>aa7802f7b3e113009b67a13816a8dc6f</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2014-09-03 22:52:22</sys_updated_on>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-04-25 13:32:39</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>level</element>
-            <list_id display_value="syslog_app_scope" element="NULL" name="syslog_app_scope" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">31167233c33221007de15ad8cbba8f0e</list_id>
+            <list_id display_value="syslog" element="NULL" name="syslog" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">aaf499bcc0a8016400ff6313824a3ee9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2014-09-03 22:52:22</sys_created_on>
-            <sys_id>b5167233c33221007de15ad8cbba8f0e</sys_id>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-04-25 13:32:39</sys_created_on>
+            <sys_id>6e7802f7b3e113009b67a13816a8dc6f</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2014-09-03 22:52:22</sys_updated_on>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-04-25 13:32:39</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>message</element>
-            <list_id display_value="syslog_app_scope" element="NULL" name="syslog_app_scope" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">31167233c33221007de15ad8cbba8f0e</list_id>
+            <list_id display_value="syslog" element="NULL" name="syslog" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">aaf499bcc0a8016400ff6313824a3ee9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2014-09-03 22:52:22</sys_created_on>
-            <sys_id>f5167233c33221007de15ad8cbba8f0e</sys_id>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-04-25 13:32:39</sys_created_on>
+            <sys_id>667802f7b3e113009b67a13816a8dc70</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2014-09-03 22:52:22</sys_updated_on>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-04-25 13:32:39</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sys_scope</element>
-            <list_id display_value="syslog_app_scope" element="NULL" name="syslog_app_scope" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">31167233c33221007de15ad8cbba8f0e</list_id>
+            <element>source</element>
+            <list_id display_value="syslog" element="NULL" name="syslog" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">aaf499bcc0a8016400ff6313824a3ee9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2014-09-03 22:52:22</sys_created_on>
-            <sys_id>39167233c33221007de15ad8cbba8f0e</sys_id>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-04-25 13:32:39</sys_created_on>
+            <sys_id>267802f7b3e113009b67a13816a8dc7d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2014-09-03 22:52:22</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>script_artifact</element>
-            <list_id display_value="syslog_app_scope" element="NULL" name="syslog_app_scope" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">31167233c33221007de15ad8cbba8f0e</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>4</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2014-09-03 22:52:22</sys_created_on>
-            <sys_id>79167233c33221007de15ad8cbba8f0e</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2014-09-03 22:52:22</sys_updated_on>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-04-25 13:32:39</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -89,7 +73,6 @@
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2016-04-22 23:17:24</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>c1f855cc670312008db1bcb532415a76</sys_id>
@@ -97,7 +80,6 @@
             <sys_name>syslog_app_scope</sys_name>
             <sys_package display_value="Parking Issues" source="x_pir">2bc7b833673212008db1bcb532415a9d</sys_package>
             <sys_policy/>
-            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Parking Issues">2bc7b833673212008db1bcb532415a9d</sys_scope>
             <sys_update_name>sys_ui_list_syslog_app_scope_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
