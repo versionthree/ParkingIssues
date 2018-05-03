@@ -5,6 +5,7 @@
         <advanced>true</advanced>
         <condition/>
         <description>Allow read for employee in x_pir_employee_car, if the ACL script returns true.</description>
+        <express_security>false</express_security>
         <name>x_pir_employee_car.employee</name>
         <operation display_value="read">read</operation>
         <script><![CDATA[var checkAccess = new CheckMyHistory();
