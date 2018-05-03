@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_index">
     <sys_index action="INSERT_OR_UPDATE">
         <col_name_string>license_plate_number</col_name_string>
-        <index_col_name element="license_plate_number" name="x_pir_employee_car">1573d33561711300964f0dcbf0fbeda7</index_col_name>
+        <index_col_name element="license_plate_number" name="x_pir_employee_car">a704c09a61b51300964f0dcbf0fbed0b</index_col_name>
         <logical_table_name>x_pir_employee_car</logical_table_name>
         <sys_class_name>sys_index</sys_class_name>
         <sys_created_by>admin</sys_created_by>
