@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Employee Car" max_length="40" name="x_pir_employee_car" type="collection">
         <element label="Car" max_length="32" name="car" reference="x_pir_car" type="reference"/>
         <element label="Color" max_length="40" name="color" type="string"/>
@@ -10,10 +9,10 @@
             <element name="car"/>
         </index>
         <index name="index2">
-            <element name="employee"/>
+            <element name="license_plate_number"/>
         </index>
         <index name="index3">
-            <element name="license_plate_number"/>
+            <element name="employee"/>
         </index>
     </element>
 </database>
