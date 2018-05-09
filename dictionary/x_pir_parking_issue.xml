@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Parking Issue" max_length="40" name="x_pir_parking_issue" type="collection">
+        <element label="Car" max_length="40" name="car" reference="x_pir_employee_car" type="reference"/>
+        <element label="Description" max_length="1000" name="description" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript: gs.getUserID()" label="Reported By" max_length="40" name="reported_by" reference="sys_user" type="reference"/>
+    </element>
+</database>
