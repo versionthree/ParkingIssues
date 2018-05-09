@@ -34,36 +34,24 @@
     function getExistingAttachments() {
 
         var existingAttach = new GlideRecord('sys_attachment');
-        existingAttach.orderBy('sys_created_on');
+        existingAttach.addQuery('table_sys_id', current.table_sys_id);
         existingAttach.query();
         while (existingAttach.next()) {
+			
+			if(existingAttach.file_name == current.file_name && existingAttach.chunk_size_bytes == current.chunk_size_bytes){
+			gs.addInfoMessage("Attachment already exists!");
+			existingAttach.deleteRecord();
+				}
+			sleep(10000);
+			//This was meant to allow a quick pause between deletes however there are too many zeros as the author miscalculated the magnitude
 
-                var ga = new GlideSysAttachment();
-                var attachmentStream2 = ga.getContentStream(existingAttach.sys_id);
-                var secondHashValue = new GlideDigest().getSHA256HexFromInputStream(attachmentStream2);
-                var currentHash = getCurrentAttachment();
-
-                if (secondHashValue == currentHash) {
-                    gs.addInfoMessage("attachment already exists!");
-                    existingAttach.deleteMultiple();
-                    break;
-                } else
-                    continue;
-
-        }
-    }
-
-    function getCurrentAttachment() {
-
-        var sysAttachment = new GlideSysAttachment();
-        var attachmentGR = sysAttachment.getAttachments('x_pir_car', current.table_sys_id);
-        attachmentGR.next();
-        var attachmentStream1 = sysAttachment.getContentStream(attachmentGR.sys_id);
-        var firstHashValue = new GlideDigest().getSHA256HexFromInputStream(attachmentStream1);
-
-        return firstHashValue;
-
-    }
+		}
+	}
+	
+	function sleep(ms) {
+       var unixtime_ms = new Date().getTime();
+       while(new Date().getTime() < unixtime_ms + ms) {}
+}
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -72,7 +60,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d19d0c8661b11300964f0dcbf0fbedcb</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>Check car attachment</sys_name>
         <sys_overrides/>
         <sys_package display_value="Parking Issues - perf" source="x_pir">2bc7b833673212008db1bcb532415a9d</sys_package>
@@ -80,7 +68,7 @@
         <sys_scope display_value="Parking Issues - perf">2bc7b833673212008db1bcb532415a9d</sys_scope>
         <sys_update_name>sys_script_d19d0c8661b11300964f0dcbf0fbedcb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-02 06:06:22</sys_updated_on>
+        <sys_updated_on>2018-05-09 09:47:09</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

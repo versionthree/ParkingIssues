@@ -9,7 +9,6 @@
         <name>x_pir.lot_manager</name>
         <requires_subscription/>
         <scoped_admin>false</scoped_admin>
-        <snbe>false</snbe>
         <suffix>lot_manager</suffix>
         <sys_class_name>sys_user_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>

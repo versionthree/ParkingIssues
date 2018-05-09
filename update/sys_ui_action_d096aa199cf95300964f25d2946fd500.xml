@@ -3,16 +3,18 @@
         <action_name>sysverb_new</action_name>
         <active>true</active>
         <client>false</client>
+        <client_script_v2/>
         <comments/>
         <condition/>
         <form_action>false</form_action>
         <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
         <form_context_menu>false</form_context_menu>
         <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
         <form_style/>
         <hint/>
         <isolate_script>false</isolate_script>
-        <keyboard_shortcut/>
         <list_action>true</list_action>
         <list_banner_button>true</list_banner_button>
         <list_button>false</list_button>
